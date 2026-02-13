@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
     // --- Elements ---
-    const cursor = document.querySelector('.cursor');
     const sections = {
         hero: document.getElementById('hero'),
         message: document.getElementById('message'),
@@ -16,19 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const audio = document.getElementById('bg-music');
     const celebrationPopup = document.getElementById('celebration-popup');
     const musicIcon = buttons.music.querySelector('.icon');
-
-    // --- Custom Cursor Logic ---
-    document.addEventListener('mousemove', (e) => {
-        cursor.style.left = e.clientX + 'px';
-        cursor.style.top = e.clientY + 'px';
-    });
-
-    // Add hover effect to interactive elements
-    const interactiveElements = document.querySelectorAll('button, a');
-    interactiveElements.forEach(el => {
-        el.addEventListener('mouseenter', () => cursor.classList.add('hovered'));
-        el.addEventListener('mouseleave', () => cursor.classList.remove('hovered'));
-    });
 
     // --- Navigation Logic ---
     function switchSection(fromId, toId) {
