@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Adwoa Dwumaa Oppong ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <div class="cursor"></div>
+    <div class="hearts-container"></div>
+
+    <div class="music-control">
+        <button id="music-toggle" aria-label="Toggle music">
+            <span class="icon">🔇</span>
+        </button>
+        <audio id="bg-music" loop>
+            <source src="music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <main>
+        <!-- Section 1: Hero -->
+        <section id="hero" class="active-section">
+            <div class="glass-card fade-in">
+                <h1>Hey Adwoa Dwumaa Oppong <span class="heart-pulse">❤️</span></h1>
+                <p class="subtext">I wanted to ask you something in a special way…</p>
+                <button id="start-btn" class="primary-btn">Click Me 💌</button>
+            </div>
+        </section>
+
+        <!-- Section 2: Message -->
+        <section id="message" class="hidden-section">
+            <div class="glass-card fade-in">
+                <p class="romantic-text">
+                    I really enjoy talking to you and you’re my favorite person..
+                    <br><br>
+                    So I thought… why not ask you properly?
+                </p>
+                <button id="next-btn" class="primary-btn">Next 🌹</button>
+            </div>
+        </section>
+
+        <!-- Section 3: The Question -->
+        <section id="question" class="hidden-section">
+            <div class="glass-card pulse-shadow">
+                <h2>So… will you be my Valentine? 🌹</h2>
+                <div class="buttons-container">
+                    <button id="yes-btn" class="yes-btn">YES 💖</button>
+                    <button id="no-btn" class="no-btn">No 🙈</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Celebration Popup -->
+    <div id="celebration-popup" class="popup hidden">
+        <div class="popup-content">
+            <h2>Yay! ❤️</h2>
+            <p>Okay, I’m officially in a good mood now.</p>
+            <div class="floating-emojis">🌹 🍫 ✨</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
